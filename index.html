@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Navbar styles - black background */
+        .card.bg-image {
+            background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            color: white;
+            height: 15rem; /* Set height for the card */
+        }
+        .card.bg-image .card-body {
+            background: rgba(0, 0, 0, 0.3); /* Added semi-transparent overlay */
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .card.bg-image .card-title {
+            padding: 1rem; /* Add padding to the card title */
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5) !important; /* Black background with transparency */
+        }
+        .navbar-nav .nav-link {
+            color: white !important; /* White text for navbar links */
+        }
+        .navbar-nav .nav-link:hover {
+            color: cyan !important; /* Change text color on hover to cyan */
+        }
+        .nav-link.invert:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .boldlist {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        /* Gradient background for the page */
+        body {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(224, 255, 255, 1)); /* Black to cyan gradient */
+            background-size: cover;
+            min-height: 100vh;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the header */
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: cyan;
+            font-size: 2.5rem;
+        }
+
+        /* Custom styles for dropdown menu */
+        .dropdown-menu {
+            background-color: black !important; /* Set the background of the dropdown to black */
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        .dropdown-item {
+            color: white !important; /* Set text color inside the dropdown to white */
+        }
+        .dropdown-item:hover {
+            background-color: rgba(0, 255, 255, 0.1) !important; /* Highlight on hover with a slight cyan effect */
+            color: cyan !important; /* Change text color to cyan on hover */
+        }
+        .dropdown-item:active {
+            background-color: rgba(0, 255, 255, 0.3) !important; /* Active state with stronger cyan background */
+        }
+
+        .card {
+            position: relative;
+            padding-bottom: 50px; /* Adjust this value based on the button height */
+            width: 20rem; /* Increase the card width */
+            margin: 0 auto; /* Center align the card */
+        }
+        .card .btn {
+            position: absolute;
+            bottom: 10px; /* Adjust this value based on the desired spacing from the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Section with Background Image */
+        .background-section {
+            background-image: url('https://user-images.githubusercontent.com/97565641/154548207-b9fc44a9-d891-4c13-b3e8-6ed5ce824f0d.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Makes the background fixed */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4); /* Added transparency to the section */
+        }
+
+        /* Transparent background for the section with cards */
+        .line {
+            background-color: rgba(0, 0, 0, 0.3); /* Added transparency */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Transparent cards */
+        .card {
+            background-color: rgba(0, 0, 0, 0.2); /* Set transparent background for cards */
+            border: none; /* Remove card border */
+            box-shadow: none; /* Remove shadow if needed */
+        }
+
+        /* Adjust text and background colors for visibility */
+        .card-body {
+            background-color: rgba(0, 0, 0, 0.5); /* Make the background semi-transparent */
+        }
+
+        /* Specific card transparency */
+        .card-body[style*="background-image:url"] {
+            background-color: rgba(0, 0, 0, 0.5) !important; /* Set transparent overlay */
+            background-blend-mode: overlay; /* Use overlay effect */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <span class="navbar-text" style="font-weight: bold; color: #33ffb8;">
+                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png" alt="GitHub Logo" width="60" height="60" class="d-inline-block">
+                GitHub Community GITAM
+            </span>
+            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4">
+                        <a class="nav-link active boldlist" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link active boldlist" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link active boldlist" aria-current="page" href="#">Domains</a>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle boldlist" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <a class="nav-link active invert" aria-current="page" href="https://www.instagram.com/githubcommunitygitam/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt="Instagram Logo" width="30" height="30" class="d-inline-block"> Join Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br> <!-- Adds space below the navbar -->
+    
+    <h1>Code • Collaborate • Create</h1>
+    <div class="background-section">
+        <h2>Welcome to the GitHub Community GITAM</h2>
+        <p>Join us and be part of the future of technology, innovation, and collaboration.</p>
+    </div>
+
+    <h3 style="color: white;">The GitHub Community GITAM is a student-led tech community across all three GITAM campuses—Visakhapatnam, Hyderabad, and Bengaluru. Founded in April 2020, we focus on innovation, collaboration, and open-source growth. With both tech and non-tech teams, we offer hackathons, workshops, mentorship, and networking opportunities to help students learn and lead in the tech world. Whether you're a coder, designer, or tech enthusiast, GitHub Community GITAM is for you! Stay updated with our events and initiatives on social media.</h3>
+
+
+    <h1 style="color: white; text-decoration: underline; text-decoration-color: #1BFFFF;">About Us</h1>
+    <!-- Background Image Section -->
+    <div class="container mt-5">
+        <!-- Card with Background Image -->
+        <div class="card bg-image">
+            <div class="card-body">
+                <h2 class="card-title text-center">Hackathons</h2>
+                <!-- Button -->
+                <a href="#" class="btn btn-light">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Card with Background Image -->
+        <div class="card bg-image">
+            <div class="card-body">
+                <h2 class="card-title text-center">Workshops</h2>
+                <!-- Button -->
+                <a href="#" class="btn btn-light">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Card with Background Image -->
+        <div class="card bg-image">
+            <div class="card-body">
+                <h2 class="card-title text-center">Events</h2>
+                <!-- Button -->
+                <a href="#" class="btn btn-light">Read More</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK"></script>
+</body>
+</html>
